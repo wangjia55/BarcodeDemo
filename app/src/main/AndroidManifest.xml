@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="me.dm7.barcodescanner"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        <!--<activity-->
+            <!--android:name=".zbar.sample.MainActivity"-->
+            <!--android:label="@string/app_name">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity
+            android:name=".zbar.sample.ScannerActivity"
+            android:label="@string/scanner_activity"
+            android:theme="@style/AppOverlayTheme"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow"/>
+        </activity>
+
+        <activity
+            android:name=".zbar.sample.ScannerFragmentActivity"
+            android:label="@string/scanner_fragment_activity"
+            android:theme="@style/AppOverlayTheme"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow"/>
+        </activity>
+
+        <activity
+            android:name=".zbar.sample.SimpleScannerActivity"
+            android:label="@string/simple_scanner_activity"
+            android:theme="@style/AppOverlayTheme">
+        </activity>
+
+        <activity
+            android:name=".zbar.sample.SimpleScannerFragmentActivity"
+            android:label="@string/simple_scanner_fragment_activity"
+            android:theme="@style/AppOverlayTheme">
+        </activity>
+
+        <activity
+            android:name=".zxing.sample.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".zxing.sample.ScannerActivity"
+                  android:theme="@style/AppOverlayTheme"
+                  android:uiOptions="splitActionBarWhenNarrow"
+                  android:label="@string/scanner_activity">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                       android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name=".zxing.sample.ScannerFragmentActivity"
+                  android:theme="@style/AppOverlayTheme"
+                  android:uiOptions="splitActionBarWhenNarrow"
+                  android:label="@string/scanner_fragment_activity">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                       android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name=".zxing.sample.SimpleScannerActivity"
+                  android:theme="@style/AppOverlayTheme"
+                  android:label="@string/simple_scanner_activity">
+        </activity>
+
+        <activity android:name=".zxing.sample.SimpleScannerFragmentActivity"
+                  android:theme="@style/AppOverlayTheme"
+                  android:label="@string/simple_scanner_fragment_activity">
+        </activity>
+    </application>
+
+</manifest>
